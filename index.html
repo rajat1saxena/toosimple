@@ -1,73 +1,188 @@
-<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Toosimple by raynesax</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/raynesax/toosimple">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/raynesax/toosimple/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/raynesax/toosimple/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
-
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>Toosimple</h1>
-          <p>A css grid system which is &quot;too simple&quot; :)</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/raynesax">raynesax</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
-        </div>
-
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+<head>
+	<title>Too Simple Grid System</title>
+	<link href="stylesheets/toosimple.css" rel="stylesheet">
+	<link href="stylesheets/normalize.css" rel="stylesheet">
+	<style>
+		body{
+			margin-top: 30px;
+		}
+		div.demo{
+			background-color: #CCC;
+			display: block;
+			margin-bottom: 10px;
+			text-align: center;
+			color: #222;
+			border-radius: 2px;
+		}
+		h1{
+			text-align: center;
+			font-size: 45px;
+			font-family: 'Georgia',sans;
+		}
+		p#punch{
+			text-align: center;
+			margin-top: 5px;
+			font-size: 17px;
+			color: #646464;
+			font-family: 'Georgia',sans;
+		}
+		p#intro{
+			font-size: 30px;
+			text-align: justify;
+			font-family: "OpenSansLight","Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		p#thanks{
+			text-align: center;
+			font-size: 36px;
+		}
+		.tsbutton {
+			-moz-box-shadow:inset 0px 1px 0px 0px #e6cafc;
+			-webkit-box-shadow:inset 0px 1px 0px 0px #e6cafc;
+			box-shadow:inset 0px 1px 0px 0px #e6cafc;
+			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c579ff), color-stop(1, #a341ee) );
+			background:-moz-linear-gradient( center top, #c579ff 5%, #a341ee 100% );
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c579ff', endColorstr='#a341ee');
+			background-color:#c579ff;
+			-moz-border-radius:6px;
+			-webkit-border-radius:6px;
+			border-radius:6px;
+			border:1px solid #a946f5;
+			display:inline-block;
+			color:#ffffff;
+			font-family:arial;
+			font-size:15px;
+			font-weight:bold;
+			padding:6px 24px;
+			text-decoration:none;
+			text-shadow:1px 1px 0px #8628ce;
+		}.tsbutton:hover {
+			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a341ee), color-stop(1, #c579ff) );
+			background:-moz-linear-gradient( center top, #a341ee 5%, #c579ff 100% );
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a341ee', endColorstr='#c579ff');
+			background-color:#a341ee;
+		}.tsbutton:active {
+			position:relative;
+			top:1px;
+		}
+		p#controls{
+			text-align: center;
+		}
+		p#controls a{
+			margin-right: 5px;
+		}
+	</style>
+</head>
+	<div class="container">
+		<h1>Too Simple</h1>
+		<p id="punch">A css grid system which is "too simple" :)</p>
+		<div class="row">
+			<div class="cover_12">
+				<p id="intro">This is an ultra light css grid system created by <a href="https://twitter.com/rajat1saxena">Rajat Saxena</a>.The css file is just of 728 bytes.The framework is robust and kinda ready to use.In fact,this webpage is using <strong>toosimple</strong> at this time.</p>
+				<h4>Details:</h4>
+				<ul>
+					<li>Width: 960px</li>
+					<li>Columns(Covers): 12</li>
+					<li>Gutter: 20px</li>
+				</ul>
+				<p id="controls"><a href="https://github.com/raynesax/toosimple" class="tsbutton">View on Github</a><a href="https://github.com/raynesax/toosimple/downloads" class="tsbutton">Download</a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="cover_12">
+				<h3>All covers</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="cover_1 demo">cover_1</div>
+		</div>
+		<div class="row">
+			<div class="cover_2 demo">cover_2</div>
+		</div>
+		<div class="row">
+			<div class="cover_3 demo">cover_3</div>
+		</div>
+		<div class="row">
+			<div class="cover_4 demo">cover_4</div>
+		</div>
+		<div class="row">
+			<div class="cover_5 demo">cover_5</div>
+		</div>
+		<div class="row">
+			<div class="cover_6 demo">cover_6</div>
+		</div>
+		<div class="row">
+			<div class="cover_7 demo">cover_7</div>
+		</div>
+		<div class="row">
+			<div class="cover_8 demo">cover_8</div>
+		</div>
+		<div class="row">
+			<div class="cover_9 demo">cover_9</div>
+		</div>
+		<div class="row">
+			<div class="cover_10 demo">cover_10</div>
+		</div>
+		<div class="row">
+			<div class="cover_11 demo">cover_11</div>
+		</div>
+		<div class="row">
+			<div class="cover_12 demo">cover_12</div>
+		</div>
+		<h3>A deeper look</h3>
+		<div class="row">
+			<div class="cover_1 demo">cover_1</div>
+			<div class="cover_1 demo">cover_1</div>
+			<div class="cover_1 demo">cover_1</div>
+			<div class="cover_1 demo">cover_1</div>
+			<div class="cover_1 demo">cover_1</div>
+			<div class="cover_1 demo">cover_1</div>
+			<div class="cover_1 demo">cover_1</div>
+			<div class="cover_1 demo">cover_1</div>
+			<div class="cover_1 demo">cover_1</div>
+			<div class="cover_1 demo">cover_1</div>
+			<div class="cover_1 demo">cover_1</div>
+			<div class="cover_1 demo">cover_1</div>
+		</div>
+		<div class="row">
+			<div class="cover_7 demo">cover_7</div>
+			<div class="cover_5 demo">cover_5</div>	
+		</div>
+		<div class="row">
+			<div class="cover_12">
+				<h4>Nested covers and rows</h4>
+			</div>
+			<div class="cover_5">
+				<div class="row">
+					<div class="cover_5 demo">cover_5</div>
+				</div>
+				<div class="row">
+					<div class="cover_2 demo">cover_2</div>
+					<div class="cover_3 demo">cover_3</div>
+				</div>
+			</div>
+			<div class="cover_7">
+				<div class="row">
+					<div class="cover_3 demo">cover_3</div>
+					<div class="cover_4 demo">cover_4</div>
+				</div>
+				<div class="row">
+					<div class="cover_4 demo">cover_4</div>
+					<div class="cover_3 demo">cover_3</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="cover_12">
+				<h3>How to use</h3>
+				<p><strong>Step 1:</strong> Download <strong>toosimple</strong> css framework file and import it in your webpage.</p>
+				<p><strong>Step 2:</strong> Now you can use <strong>.container</strong> class to define a container having width of 960px, <strong>.row</strong> class to define a new row and <strong>.cover_*</strong>(Replace the star with a number from 0 to 12) classes to create columns of desired sizes.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="cover_12">
+				<p id="thanks">Thank You!</p>
+			</div>
+		</div>
+	</div>
 </html>
