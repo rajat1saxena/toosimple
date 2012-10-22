@@ -1,5 +1,6 @@
 /*
-Too Simple Grid System
+Too Simple Grid System 
+By Rajat Saxena(rajat.saxena.work@gmail.com)
 */
 
 $body-width: 960px;
@@ -11,8 +12,6 @@ $cover-width: (($body-width)-(11*$column-margin))/12;
 	width: $body-width;
 	margin: 0px auto;
 }
-
-// clearfix hacks - http://nicolasgallagher.com/micro-clearfix-hack/
 
 .row{
 	*zoom: 1;

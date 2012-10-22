@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Grid system demo</title>
+	<title>Too Simple Grid System</title>
 	<link href="toosimple.css" rel="stylesheet">
 	<style>
 		body{
@@ -16,11 +16,80 @@
 		}
 		h1{
 			text-align: center;
+			font-size: 45px;
+		}
+		p#punch{
+			text-align: center;
+			margin-top: 5px;
+			font-size: 17px;
+			color: #646464;
+			font-family: 'Georgia',Arial,sans;
+		}
+		p#intro{
+			font-size: 35px;
+			text-align: justify;
+		}
+		p#thanks{
+			text-align: center;
+			font-size: 36px;
+		}
+		.tsbutton {
+			-moz-box-shadow:inset 0px 1px 0px 0px #e6cafc;
+			-webkit-box-shadow:inset 0px 1px 0px 0px #e6cafc;
+			box-shadow:inset 0px 1px 0px 0px #e6cafc;
+			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c579ff), color-stop(1, #a341ee) );
+			background:-moz-linear-gradient( center top, #c579ff 5%, #a341ee 100% );
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c579ff', endColorstr='#a341ee');
+			background-color:#c579ff;
+			-moz-border-radius:6px;
+			-webkit-border-radius:6px;
+			border-radius:6px;
+			border:1px solid #a946f5;
+			display:inline-block;
+			color:#ffffff;
+			font-family:arial;
+			font-size:15px;
+			font-weight:bold;
+			padding:6px 24px;
+			text-decoration:none;
+			text-shadow:1px 1px 0px #8628ce;
+		}.tsbutton:hover {
+			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a341ee), color-stop(1, #c579ff) );
+			background:-moz-linear-gradient( center top, #a341ee 5%, #c579ff 100% );
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a341ee', endColorstr='#c579ff');
+			background-color:#a341ee;
+		}.tsbutton:active {
+			position:relative;
+			top:1px;
+		}
+		p#controls{
+			text-align: center;
+		}
+		p#controls a{
+			margin-right: 5px;
 		}
 	</style>
 </head>
 	<div class="container">
-		<h1>Grid System Demo</h1>
+		<h1>Too Simple</h1>
+		<p id="punch">A css grid system which is "too simple" :)</p>
+		<div class="row">
+			<div class="cover_12">
+				<p id="intro">This is an ultra light css grid system created by <a href="https://twitter.com/rajat1saxena">Rajat Saxena</a>.The css file is just of 728 bytes.The framework is robust and kinda ready to use.In fact,this webpage is using <strong>toosimple</strong> at this time.</p>
+				<h4>Details:</h4>
+				<ul>
+					<li>Width: 960px</li>
+					<li>Columns(Covers): 12</li>
+					<li>Gutter: 20px</li>
+				</ul>
+				<p id="controls"><a href="https://github.com/raynesax/toosimple" class="tsbutton">View on Github</a><a href="https://github.com/raynesax/toosimple/downloads" class="tsbutton">Download</a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="cover_12">
+				<h3>All covers</h3>
+			</div>
+		</div>
 		<div class="row">
 			<div class="cover_1 demo">cover_1</div>
 		</div>
@@ -57,7 +126,7 @@
 		<div class="row">
 			<div class="cover_12 demo">cover_12</div>
 		</div>
-		<h2>Detailing</h2>
+		<h3>A deeper look</h3>
 		<div class="row">
 			<div class="cover_1 demo">cover_1</div>
 			<div class="cover_1 demo">cover_1</div>
@@ -75,6 +144,42 @@
 		<div class="row">
 			<div class="cover_7 demo">cover_7</div>
 			<div class="cover_5 demo">cover_5</div>	
-		</div>	
+		</div>
+		<div class="row">
+			<div class="cover_12">
+				<h4>Nested covers and rows</h4>
+			</div>
+			<div class="cover_5">
+				<div class="row">
+					<div class="cover_5 demo">cover_5</div>
+				</div>
+				<div class="row">
+					<div class="cover_2 demo">cover_2</div>
+					<div class="cover_3 demo">cover_3</div>
+				</div>
+			</div>
+			<div class="cover_7">
+				<div class="row">
+					<div class="cover_3 demo">cover_3</div>
+					<div class="cover_4 demo">cover_4</div>
+				</div>
+				<div class="row">
+					<div class="cover_4 demo">cover_4</div>
+					<div class="cover_3 demo">cover_3</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="cover_12">
+				<h3>How to use</h3>
+				<p><strong>Step 1:</strong> Download <strong>toosimple</strong> css framework file and import it in your webpage.</p>
+				<p><strong>Step 2:</strong> Now you can use <strong>.container</strong> class to define a container having width of 960px, <strong>.row</strong> class to define a new row and <strong>.cover_*</strong>(Replace the star with a number from 0 to 12) classes to create columns of desired sizes.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="cover_12">
+				<p id="thanks">Thank You!</p>
+			</div>
+		</div>
 	</div>
 </html>
