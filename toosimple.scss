@@ -1,0 +1,71 @@
+/*
+Too Simple Grid System
+*/
+
+$body-width: 960px;
+$column-margin: 20px;
+$number-of-columns: 12;
+$cover-width: (($body-width)-(11*$column-margin))/12;
+
+.container{
+	width: $body-width;
+	margin: 0px auto;
+}
+
+// clearfix hacks - http://nicolasgallagher.com/micro-clearfix-hack/
+
+.row{
+	*zoom: 1;
+	margin-left: -20px;
+}
+.row:after,before{
+	display: table;
+	content: " ";
+}
+.row:after{
+	clear: both;
+}
+
+// end of clearfix
+
+[class*="cover_"]{
+	float: left;
+	margin-left: 20px;
+}
+
+.cover_1{
+	width: $cover-width;
+}
+.cover_2{
+	width: $cover-width*2+$column-margin*1;
+}
+.cover_3{
+	width: $cover-width*3+$column-margin*2;
+}
+.cover_4{
+	width: $cover-width*4+$column-margin*3;
+}
+.cover_5{
+	width: $cover-width*5+$column-margin*4;
+}
+.cover_6{
+	width: $cover-width*6+$column-margin*5;
+}
+.cover_7{
+	width: $cover-width*7+$column-margin*6;
+}
+.cover_8{
+	width: $cover-width*8+$column-margin*7;
+}
+.cover_9{
+	width: $cover-width*9+$column-margin*8;
+}
+.cover_10{
+	width: $cover-width*10+$column-margin*9;
+}
+.cover_11{
+	width: $cover-width*11+$column-margin*10;
+}
+.cover_12{
+	width: $cover-width*12+$column-margin*11;
+}

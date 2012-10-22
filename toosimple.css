@@ -1,0 +1,57 @@
+/*
+Too Simple Grid System
+*/
+.container {
+  width: 960px;
+  margin: 0px auto; }
+
+.row {
+  *zoom: 1;
+  margin-left: -20px; }
+
+.row:after, before {
+  display: table;
+  content: " "; }
+
+.row:after {
+  clear: both; }
+
+[class*="cover_"] {
+  float: left;
+  margin-left: 20px; }
+
+.cover_1 {
+  width: 61.66667px; }
+
+.cover_2 {
+  width: 143.33333px; }
+
+.cover_3 {
+  width: 225px; }
+
+.cover_4 {
+  width: 306.66667px; }
+
+.cover_5 {
+  width: 388.33333px; }
+
+.cover_6 {
+  width: 470px; }
+
+.cover_7 {
+  width: 551.66667px; }
+
+.cover_8 {
+  width: 633.33333px; }
+
+.cover_9 {
+  width: 715px; }
+
+.cover_10 {
+  width: 796.66667px; }
+
+.cover_11 {
+  width: 878.33333px; }
+
+.cover_12 {
+  width: 960px; }
